@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "ES2022",
+    "module": "ESNext",
     "declaration": false,
     "declarationMap": false,
     "moduleResolution": "node",
@@ -12,23 +12,20 @@
     "sourceMap": false,
     "outDir": "./dist",
     "baseUrl": "./",
-    "rootDir": "./",
+    "rootDir": "./src",
     "incremental": true,
     "skipLibCheck": true,
     "paths": {
       "~/*": ["./src/*"]
     }
   },
-  "include": [
-    "**/*.js",
-    "**/*.ts"
-  ],
+  "include": ["src/**/*"],
   "exclude": [
     "node_modules",
     "dist",
     "**/*.test.ts",
     "**/*.spec.ts",
-    "**e2e**",
-    "**mock**"
+    "**/e2e/**",
+    "**/mock/**"
   ]
 }
